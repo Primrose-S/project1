@@ -3,8 +3,23 @@ import "./styles.css"; // Add CSS for additional styling
 
 function App() {
   return (
+    <body>
     <div className="app">
       <header className="header">
+      <nav class="top-nav">
+         <p class="sp">Sales@lancer.jobs</p> 
+
+        <ul>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#Developers">Developers</a></li>
+            
+        </ul>
+        <button>log in</button>
+        <input type="text" placeholder="Apply now- free" id="input"/>
+      </nav>
         <h1>More Powerful Than Platinum</h1>
         <p>
           Gain Complete Command Over Your Company's Expenses, Ensuring Absolute
@@ -43,6 +58,10 @@ function App() {
         <div className="arrow right-arrow">→</div>
       </div>
     </div>
+    <footer>
+      <span> coded by Primrose Sibongile Dube</span>
+    </footer>
+    </body>
   );
 }
 

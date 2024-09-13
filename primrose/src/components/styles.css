@@ -1,3 +1,7 @@
+body{
+  background-color: bisque;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +10,105 @@
   }
   
   .app {
+    display: block;
+    margin: 0 auto;
     text-align: center;
-    padding: 50px;
+    background-color: aquamarine;
+    max-width: 900px;
+    border-radius: 23px ;
+    border: 5px black;
+
   }
+  nav{
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    /* padding: 10px 10%; */
+    padding-left: 30px;
+    padding-right: 20px;
+    background-color: #000000;
+    height: 80px;
+    margin-bottom: 120px;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    /* margin: 10px 20px; */
+    margin-left: 35px;
+  }
+  nav.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+  }
+  nav ul li a {
+    color:rgb(95, 220, 240);
+    text-decoration: none;
+    font-size: 20px;
+  /* font-optical-sizing: auto; */
+    position: relative;
+    font-style: italic;
+  }
+  nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(95, 220, 240);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  nav ul li a:hover::after{
+  width: 100%;
+  }
+  .top-nav button{
+  
+    padding: 10px;
+    border-radius:3px;
+    border: 0;
+    margin: 10px;
+  }
+  .top-nav .input{
+    padding: 12px;
+    margin: 13px;
+    color:black;
+  }
+  
+  /* .top-nav ul {
+    display: flex; */
+    /* justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .top-nav a{
+    color: rgb(0, 234, 255);
+    text-decoration: none;
+    border: 1px solid grey;
+    border-radius: 4px;
+    /* background-color: rgb(0, 234, 255); */
+    /* border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px rgba(1, 14, 12, 0.5);
+    margin: 5px;
+    transition: all 150ms ease-in-out;
+  
+  } */
+  /* .top-nav a:hover{
+    color: blue;
+  } */ */
+  
+  
   
   .header h1 {
     font-size: 3em;
@@ -109,4 +209,8 @@
   .platinum {
     background-image: url('https://via.placeholder.com/250x150');
   }
-  
+  footer{
+    margin-top: 12px;
+    font-style: italic;
+    font-size: small; 
+  }
