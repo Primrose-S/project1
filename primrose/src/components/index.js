@@ -59,7 +59,7 @@ function App() {
       </div>
     </div>
     <footer>
-      <span> coded by Primrose Sibongile Dube</span>
+      <span> coded  with 😀 by Primrose Sibongile Dube</span>
     </footer>
     </body>
   );
